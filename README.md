@@ -1,4 +1,4 @@
-PyFunds
+PyPractice
 =======
 
-Brushing up on some Python fundamentals
+Brushing up on some Python
