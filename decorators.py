@@ -43,11 +43,10 @@ def magic_word(word="celery"):
 @magic_word()
 # @magic_word("please")
 def gimme_pizza(count, pie_type="muddled broccoflower"):
-    plural = ""
     if count > 1:
-        plural = "s"
-    return "{} xtra-hugeish muddled broccoflower{}, coming right up!".format(
-        count, plural
+        pie_type += 's'
+    return "{} xtra-hugeish {}, coming right up!".format(
+        count, pie_type
     )
 
 gimme_pizza(3)
