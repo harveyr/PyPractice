@@ -1,7 +1,9 @@
+from functools import wraps
 
 # Simple decorator
 
 def decoratress(func):
+    @wraps(func)
     def wrapped(*args, **kwargs):
         print("You called {} with args, kwargs: {}, {}".format(
             func, args, kwargs)
@@ -12,10 +14,15 @@ def decoratress(func):
 
 @decoratress
 def decorated_func(number, bingo=False):
+    """A very impressive function."""
     s = "The next number is ... {}.".format(number)
     if bingo:
         s += "\nI WIN!!!"
     return s
+
+# The use of the wraps decorator updates wrapped to look like decorated_func,
+# so the name and doc string and are not lost
+assert(decorated_func.__name__ == "decorated_func")
 
 print(decorated_func(5))
 print
