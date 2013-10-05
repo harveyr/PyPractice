@@ -1,6 +1,4 @@
 PyPractice
 =======
 
-Putting a few working Python examples here for future reference.
-
-Not much to see yet.
+Various things worth remembering (or at least being able to review quickly)
