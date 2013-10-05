@@ -40,3 +40,9 @@ with_extra_arg = partial(
     tommy="The Mommy"
 )
 with_extra_arg()
+print
+
+print('[partial properties]')
+print('partial.func: {0}'.format(with_extra_arg.func))
+print('partial.args: {0}'.format(with_extra_arg.args))
+print('partial.keywords: {0}'.format(with_extra_arg.keywords))
