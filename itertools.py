@@ -64,7 +64,7 @@ for i in flatmap(spectrum_of_stuffs, items):
 
 print('\n---\n')
 
-# factor grabbing
+# factor grabbing with ifilter, takewhile, count, and flatmap
 def factors(n):
     return itertools.ifilter(
         lambda x: n % x == 0,
