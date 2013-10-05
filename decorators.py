@@ -49,6 +49,6 @@ def gimme_pizza(count, pie_type="muddled broccoflower"):
         count, pie_type
     )
 
-print('gimme_pizza(3): {0}'.format(gimme_pizza(3)))
+print(gimme_pizza(3))
 
 
